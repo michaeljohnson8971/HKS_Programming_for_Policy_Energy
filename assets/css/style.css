@@ -130,3 +130,12 @@ footer {
 footer h2 {
     font-size: 20px;
 }
+
+.profile{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
