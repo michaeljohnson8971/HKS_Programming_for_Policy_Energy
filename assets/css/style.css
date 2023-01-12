@@ -72,12 +72,12 @@ p {
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 1vw;
 }
 
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 2vw;
+    padding: 1vw;
     clear: both;
     float: right;
     width: 20%;
@@ -99,20 +99,23 @@ p {
 .benefit-lead img, .benefit-brand img, .benefit-cost img {
     display: block;
     margin: 10px auto;
-    max-width: 150px;
+    max-width: 100%;
+    height: auto;
 }
 
 .construction-news-article-of-the-day, .funding-breakdown, .impact-analysis{
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin-bottom: 2vw;
+    padding: 2vw;
+    height: 20vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
 
 .construction-news-article-of-the-day img, .funding-breakdown img, .impact-analysis img {
-    max-height: 200px;
+    max-height: 10vw;
+    max-width: 100%;
+    height: auto;
 }
 
 .construction-news-article-of-the-day h2, .funding-breakdown h2, .impact-analysis h2 {
@@ -138,4 +141,6 @@ footer h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    max-width: 100%;
+    height: auto;
 }
