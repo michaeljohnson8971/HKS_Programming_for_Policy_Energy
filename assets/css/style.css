@@ -103,14 +103,25 @@ p {
     height: auto;
 }
 
-.construction-news-article-of-the-day, .funding-breakdown, .impact-analysis{
-    margin-bottom: 2vw;
+.funding-breakdown, .impact-analysis{
+    margin-bottom: 3vw;
     padding: 2vw;
-    height: 20vw;
+    height: 30vw;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
 }
+
+
+.construction-news-article-of-the-day{
+    margin-bottom: 3vw;
+    padding: 2vw;
+    height: 65vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
 
 .construction-news-article-of-the-day img, .funding-breakdown img, .impact-analysis img {
     max-height: 10vw;
