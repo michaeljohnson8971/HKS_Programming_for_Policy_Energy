@@ -27,34 +27,37 @@
         <h2>Impact Analysis</h2> 
         <div>
             <iframe title="Energy Consumption in Texas (Copy)" aria-label="Interactive line chart" id="datawrapper-chart-wBpky" src="https://datawrapper.dwcdn.net/wBpky/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}(); </script>
-    
+<!-- text for intial graph  -->
     <p>subtitle</p>
-    <h3>Title</h3>
-    <p> Copy</p>
-    <img src="./assets/images/placeholder.png" class="float-left" alt = "none" width = "20" height ="20"/>
-        </div>
-        
-        <!--img src="./assets/images/construction-news-article-of-the-day.jpg" class="float-left" alt = "none"/-->
-            
-            
-            <!--div-->
-                 
-          
 
-            <!--p style="margin-top: 20px;">
-            <li><a href="https://www.eia.gov/tools/rssfeeds//" style="width:100px;height:50px;border:6px solid green; background:#ccc; margin-top: 10px">Enery Infrastructure</a></li>
-            <p/-->
+<!--Loading new Graph -->
+<svg id="dataviz_area" height=200 width=450></svg>
 
-            <!--p style="margin-top: 20px;">
-            <li><a href="https://datawrapper.dwcdn.net/vhWUk/1/" style="width:100px;height:50px;border:6px solid green; background:#ccc;margin-top: 10px">What is happening nationally</a></li>
-            <p/-->
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js">
+</script>
 
-            <!--p style="margin-top: 20px;">
-            <li><a href="https://datawrapper.dwcdn.net/vhWUk/1/" style="width:100px;height:50px;border:6px solid green; background:#ccc;margin-top: 10px">What is happening in Texas</a></li>
-            <p/-->
+    <script>
+        var svg = d3.select("#dataviz_area")
+        svg.append("circle")
+          .attr("cx", 2).attr("cy", 2).attr("r", 40).style("fill", "blue");
+        svg.append("circle")
+          .attr("cx", 140).attr("cy", 70).attr("r", 40).style("fill", "red");
+        svg.append("circle")
+          .attr("cx", 300).attr("cy", 100).attr("r", 40).style("fill", "green");
+    </script>
 
-        </div>
-        
+
+
+        <h3>Title</h3>
+        <p> Copy (Need write up) </p>
+            <img src="./assets/images/placeholder.png" class="float-left" alt = "none" width = "20" height ="20"/>
+    </div>
+    </div>
+
+<!-- D3 grapg --> 
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="/graph.js"></script>
         
 
 <!-- Side content -->  
