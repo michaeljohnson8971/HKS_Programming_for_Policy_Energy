@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- Head -->  
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--nav>
+    <title>Renewable Energy Impact</title>
+    </nav-->
+</head>
+
+<body>
+    
+<!-- Header -->  
+    <header>
+        <h1>U.S. Energy<span class="seo"></span></h1>
+
+        </div>
+    </header>
+
+<!-- Banner --> 
+
+<!-- Main content -->  
+    
+    <section class="post">
+        <h2>Federal Funding</h2> 
+        <p> Incorrect graph </p>
+        <div>
+            <iframe title="Energy Consumption in Texas (Copy)" aria-label="Interactive line chart" id="datawrapper-chart-wBpky" src="https://datawrapper.dwcdn.net/wBpky/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}(); </script>
+<!-- text for intial graph  -->
+    <p>subtitle</p>
+
+<!--Loading new Graph -->
+<svg id="dataviz_area" height=200 width=450></svg>
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js">
+</script>
+
+    <script>
+        var svg = d3.select("#dataviz_area")
+        svg.append("circle")
+          .attr("cx", 2).attr("cy", 2).attr("r", 40).style("fill", "blue");
+        svg.append("circle")
+          .attr("cx", 140).attr("cy", 70).attr("r", 40).style("fill", "red");
+        svg.append("circle")
+          .attr("cx", 300).attr("cy", 100).attr("r", 40).style("fill", "green");
+    </script>
+
+
+
+        <h3>Title</h3>
+        <p> Copy (Need write up) </p>
+            <img src="./assets/images/placeholder.png" class="float-left" alt = "none" width = "20" height ="20"/>
+    </div>
+    </div>
+
+<!-- D3 grapg --> 
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="/graph.js"></script>
+        
+
+<!-- Side content -->  
+
+    </section>
+
+</body>
+
+<!-- Footer -->  
+
+<footer>
+    <h3>Made for code4policy</h3>
+    <p>
+        &copy; 2023 Harvard Kennedy School
+    </p>
+</footer>
+
+</html>
