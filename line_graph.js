@@ -8,25 +8,28 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
 // append the svg object to the body of the page
 var svg = d3.select("#my_dataviz")
   .append("svg")
-    .attr("width", width + margin.left + margin.right)
+    .attr("width", width )
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-d3.csv("National_Energy_prices_million_BTU.csv", function(error, data) {
- 
-  var x  = d3.scalarLinear()
-  .domain([1,100])
-  .range([0,width]);
+//Read the data
+d3.csv("data_IC.csv",function(data) {
 
-  svg.append("g")
+    // Add X axis --> it is a date format
+    var x = d3.scaleLinear()
+      .domain([1950,2020])
+      .range([ 0, width -100 ]);
+    svg.append("g")
       .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .call(d3.axisBottom(x).tickValues(["1950","1960","1970","1980","1990","2000","2010","2020"]));
+
+
 
     // Add Y axis
     var y = d3.scaleLinear()
-      .domain([0, 13])
+      .domain([0, 3.5])
       .range([ height, 0 ]);
     svg.append("g")
       .call(d3.axisLeft(y));
@@ -38,8 +41,8 @@ d3.csv("National_Energy_prices_million_BTU.csv", function(error, data) {
       .attr("stroke", "none")
       .attr("d", d3.area()
         .x(function(d) { return x(d.x) })
-        .y0(function(d) { return y(d.CI_right) })
-        .y1(function(d) { return y(d.CI_left) })
+        //.y0(function(d) { return y(d.CI_right) })
+        //.y1(function(d) { return y(d.CI_left) })
         )
 
     // Add the line
@@ -55,6 +58,4 @@ d3.csv("National_Energy_prices_million_BTU.csv", function(error, data) {
         )
 
 })
-
-
 
